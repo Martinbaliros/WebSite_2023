@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="images/ifm.png" type="image/x-icon">
+        <title>Profil</title>
+        <link rel="stylesheet" type="text/css" href="css/profil.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="navbar.js" defer></script>
+    </head>
+    <body>
+        
+        <nav class="navbar">
+            <div class="brand-title"> 
+                <img src="images/IFM_logo.png" alt="logo IFM" width="70">
+                <div class="label-ifm">
+                    <label>IFM</label>
+                </div>
+            </div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+              <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="#">Suivi</a></li>
+                <li><a href="page_vente.html">LifePal</a></li>
+                <li><a href="ifm.html">A propos de nous</a></li>
+                <li><a href="reseaux.html">Contact</a></li>
+              </ul>
+            </div>
+        </nav>
+            
+        <div class="container">
+            <div class="box1">
+                <div class="text_area">
+                    <input  name="NomPrenom"></input>
+                </div>
+                <div class="text_area">
+                    <label>Numéro de sécurité sociale:</label>
+                    <input name="NumSecu"></input>
+                </div>
+                <div class="text_area">
+                    <label>Adresse email</label>
+                    <input type="email" name="email"></input>
+                </div>
+                <div class="text_area">
+                    <label>Téléphone</label>
+                    <input name="Téléphone"></input>
+                </div>
+                <div class="text_area">
+                    <label>Date de naissance</label>
+                    <input type="date"  name="Date"></input>
+                </div>
+                <div class="categories">
+                    <div class="my-form-button_deco">
+                        <form>
+                            <input class="button_deco" type="submit" value="Se déconnecter" name="">
+                        </form>      
+                    </div>
+                </div>    
+            </div>
+
+            <div class="box2">
+                    <div class="categories">
+                        <div class="my-form">
+                        <h2>
+                            Ancien mot de passe
+                        </h2>
+                        <form action="process.php" method="POST">
+                            <label></label>
+                            <input type="email" name="email">
+                        </form>
+                        <br>
+                        <h2>    
+                            Nouveau mot de passe   
+                        </h2>
+                        <form action="process.php" method="POST">
+                            <label></label>
+                            <input type="password" name="password">
+                        </form>
+                        </div>
+                    </div>
+                    <div class="categories">
+                        <div class="my-form-button">
+                            <form>
+                                <input class="button" type="submit" value="Valider" name="">
+                            </form>      
+                        </div>
+                    </div> 
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <h3>IFM</h3>
+    
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>Conditions générales d'utilisation</p>
+                <p>Mentions légales</p>
+    
+            </div>
+        </footer>
+    </body>
+</html>

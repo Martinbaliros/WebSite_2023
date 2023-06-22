@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="images/ifm.png" type="image/x-icon">
+        <title>Création d'un compte - IFM</title>
+        <link rel="stylesheet" type="text/css" href="css/création_compte.css">
+    </head>
+    <body>
+        <div class="categories-image">
+            <img src="images/ifm.png" alt="test">
+        </div>
+        <br>
+        <div class="container">
+            <h2>Créer un compte</h2>
+            <div class="center_input">
+                <div class="my-form">
+                    <form action="process.php" method="POST">
+                        <label>Nom</label>
+                        <input type="name" name="name">
+                    </form>
+                </div>
+                <br>
+                <div class="my-form">
+                    <form action="process.php" method="POST">
+                        <label>Prénom</label>
+                        <input type="name" name="surname">
+                    </form>
+                </div>
+                <br>
+                <div class="my-form">
+                    <form action="process.php" method="POST">
+                        <label>Adresse e-mail</label>
+                        <input type="identification" name="numéro">
+                    </form>
+                </div> 
+                <br>
+                <div class="my-form">
+                    <form action="process.php" method="POST">
+                        <label>Mot de passe</label>
+                        <input type="password" name="password">
+                    </form>
+                </div>
+                <br>
+                <div class="my-form">
+                    <form action="process.php" method="POST">
+                        <label>Entrez le mot de passe à nouveau</label>
+                        <input type="password" name="password">
+                    </form>
+                </div>
+                <br>
+                <div class="rappel_mdp">
+                    <li>Le mot de passe doit avoir au moins 6  caractères</li>
+                </div>
+                
+                <br>
+                
+                <div>
+                    <form>
+                        <input class="button" type="submit" value="Continuer" name="">
+                    </form>
+                </div>   
+            </div>    
+    </body>
+</html>
